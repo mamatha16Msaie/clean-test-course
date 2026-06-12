@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install
-      - name: Run Functioanl tests 
+      - name: Run Functional tests 
       - run: npm test -- --coverage --watchAll=false 
   deploy:
     needs : [function_test]
